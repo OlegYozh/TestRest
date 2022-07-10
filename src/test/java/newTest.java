@@ -1,0 +1,31 @@
+import groovy.json.StringEscapeUtils;
+import org.apache.http.HttpStatus;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.Locale;
+
+import static io.restassured.RestAssured.given;
+
+public class newTest {
+
+    @Test
+    public void test0() {
+        String companyName = StringEscapeUtils.escapeJava("Альбатрос").toLowerCase(Locale.ROOT);
+        String companyType = StringEscapeUtils.escapeJava("ООО").toLowerCase(Locale.ROOT);
+        String emailOwner = "aa+1@mail.com";
+        String users = "[\"test_cu_11@mail.com\",\"test_dev@mail.com\",\"ivan@noibiz.com\"]";
+        String reqBody = "{\n" +
+                "\"company_name\": \"" + companyName + "\",\n" +
+                "\"company_users\": " + users + ",\n " +
+                "\"email_owner\": \"" + emailOwner + "\",\n" +
+                "\"company_type\": \"" + companyType + "\"\n" +
+                "} ";
+        String respBodyActual = given().when().body(reqBody).get("http://users.bugred.ru/tasks/rest/createcompany").then().assertThat().statusCode(HttpStatus.SC_OK).extract().asString();
+        System.out.println(respBodyActual);
+        Assert.assertTrue(respBodyActual.contains("\"type\":\"success\""));
+        Assert.assertTrue(respBodyActual.contains("\"name\":\""+companyName+"\""));
+        Assert.assertTrue(respBodyActual.contains("\"type\":\""+companyType+"\""));
+        Assert.assertTrue(respBodyActual.contains("\"users\":"+users));
+    }
+}
