@@ -52,6 +52,6 @@ public class newTest {
         String respBodyActual = given().when().body(reqBody).post("http://users.bugred.ru/tasks/soap/WrapperSoapServer.php").then().assertThat().statusCode(HttpStatus.SC_OK).extract().asPrettyString();
         System.out.println(respBodyActual);
 
-        Assert.assertTrue(respBodyActual.contains("<message xsi:type=\"xsd:string\">Êîìïàíèÿ óñïåøíî ñîçäàíà!</message>"));
+        Assert.assertTrue(respBodyActual.contains("<message xsi:type=\"xsd:string\">Компания успешно создана!</message>"));
     }
 }
