@@ -22,7 +22,7 @@ public class newTest {
                 "\"company_type\": \"" + companyType + "\"\n" +
                 "} ";
         String respBodyActual = given().when().body(reqBody).get("http://users.bugred.ru/tasks/rest/createcompany").then().assertThat().statusCode(HttpStatus.SC_OK).extract().asString();
-        System.out.println(respBodyActual);
+
         Assert.assertTrue(respBodyActual.contains("\"type\":\"success\""));
         Assert.assertTrue(respBodyActual.contains("\"name\":\""+companyName+"\""));
         Assert.assertTrue(respBodyActual.contains("\"type\":\""+companyType+"\""));
