@@ -31,11 +31,7 @@ public class newTest {
 
     @Test
     public void test1() {
-        String companyName = StringEscapeUtils.escapeJava("Альбатрос").toLowerCase(Locale.ROOT);
-        String companyType = StringEscapeUtils.escapeJava("ООО").toLowerCase(Locale.ROOT);
-        String comp2 = StringEscapeUtils.unescapeJava(companyType);
-        String emailOwner = "aa+1@mail.com";
-        String users = "[\"test_cu_11@mail.com\",\"test_dev@mail.com\",\"ivan@noibiz.com\"]";
+
         String reqBody = "<?xml version='1.0' encoding='UTF-8' ?>\n" +
                 "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:wrap=\"http://foo.bar/wrappersoapserver\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\">\n" +
                 "    <soapenv:Header/>\n" +
