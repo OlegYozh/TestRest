@@ -11,8 +11,8 @@ public class newTest {
 
     @Test
     public void test0() {
-        String companyName = StringEscapeUtils.escapeJava("Àëüáàòðîñ").toLowerCase(Locale.ROOT);
-        String companyType = StringEscapeUtils.escapeJava("ÎÎÎ").toLowerCase(Locale.ROOT);
+        String companyName = StringEscapeUtils.escapeJava("Тестовый").toLowerCase(Locale.ROOT);
+        String companyType = StringEscapeUtils.escapeJava("ООО").toLowerCase(Locale.ROOT);
         String emailOwner = "aa+1@mail.com";
         String users = "[\"test_cu_11@mail.com\",\"test_dev@mail.com\",\"ivan@noibiz.com\"]";
         String reqBody = "{\n" +
