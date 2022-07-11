@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d7c3c2a-22a9-4058-a499-5482fdbbc7a5" name="Changes" comment="Написан автотест для отправки POST запроса и проверка его содержания">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="9d7c3c2a-22a9-4058-a499-5482fdbbc7a5" name="Changes" comment="Написан второй тест для задания">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/newTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/newTest.java" afterDir="false" />
     </list>
@@ -23,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,15 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.newTest.test0">
+}]]></component>
+  <component name="RunManager" selected="JUnit.newTest.test1">
     <configuration name="newTest.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestRest" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,8 +68,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.newTest.test0" />
         <item itemvalue="JUnit.newTest.test1" />
+        <item itemvalue="JUnit.newTest.test0" />
       </list>
     </recent_temporary>
   </component>
@@ -79,7 +83,9 @@
       <updated>1657455727806</updated>
       <workItem from="1657455729306" duration="1506000" />
       <workItem from="1657457580089" duration="6285000" />
-      <workItem from="1657463922936" duration="612000" />
+      <workItem from="1657463922936" duration="869000" />
+      <workItem from="1657476018754" duration="949000" />
+      <workItem from="1657524919838" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="Написан автотест для отправки POST запроса и проверка его содержания">
       <created>1657461556263</created>
@@ -95,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657461785667</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Написан второй тест для задания">
+      <created>1657464646606</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657464646606</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Написан второй тест для задания">
+      <created>1657464735598</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657464735598</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,9 +131,25 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написан автотест для отправки POST запроса и проверка его содержания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан автотест для отправки POST запроса и проверка его содержания" />
+    <MESSAGE value="Написан второй тест для задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написан второй тест для задания" />
   </component>
 </project>
